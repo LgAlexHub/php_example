@@ -1,6 +1,6 @@
 <?php
     $get_isset = isset($_GET['page']);
-    $url= "http://moviez?page=";
+    $url= "http://".$_SERVER['SERVER_NAME']."?page=";
     if ($direction == "Suivant"){
         if ($get_isset){
             $url.= $_GET['page']+1;

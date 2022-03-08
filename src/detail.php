@@ -7,7 +7,7 @@
         $date= date_create($movie->release_date);
         $date= date_format($date, 'd/m/Y ');
     }else{
-        header('Location: http://moviez/');
+        header('Location: http://'.$_SERVER['SERVER_NAME']);
     }
     $title= $movie->title;
     require_once(root."/inc/header.php");

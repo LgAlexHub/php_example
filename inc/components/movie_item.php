@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <a href="http://moviez/src/detail.php?id=<?=$movie_id?>" class="btn btn-primary w-100">
+            <a href="http://<?= $_SERVER['SERVER_NAME']?>/src/detail.php?id=<?=$movie_id?>" class="btn btn-primary w-100">
                 Détail
             </a>
         </div>
